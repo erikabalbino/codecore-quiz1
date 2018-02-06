@@ -1,0 +1,16 @@
+<%- include("./partials/header") %>
+
+  <div class="container task_content">
+    <h1>Sign In</h1>
+
+    <form action="/sign_in" method="POST">
+      <div class="form-group">
+        <label for="fullName"></label> <br />
+        <input class="form-control" type="text" name="username"  id="username" />
+      </div>
+
+      <input class="btn btn-outline-primary" type="submit" value="Submit">
+    </form>
+  </div>
+
+<%- include("./partials/footer") %>

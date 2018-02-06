@@ -1,0 +1,19 @@
+<%- include('../partials/header') %>
+
+<div class="container task_content">
+  <div class="posts-list">
+    <% for (let cluck of clucks) { %>
+      <div class="card mb-2">
+        <div class="card-body">
+          <h4 class="card-title"><%= cluck.username
+           %></h4>
+          <p class="card-text"><strong>Created at:</strong> <%= cluck.created_at %></p>
+          <p class="card-text"><%= cluck.content %></p>
+        </div>
+        <img class="card-img-top" src="<%= cluck.image_url %>" />
+      </div>
+    <% } %>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>
